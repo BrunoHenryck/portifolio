@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Dark | Dev & Creator</title>    
+    <link rel="stylesheet" href="style.css">
+     <!-- Tailwind CSS para estilização moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons para ícones minimalistas -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+     <div id="mouse-glow"></div>
+
+    <!-- Navegação -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center glass-card border-none bg-opacity-50">
+        <div class="text-xl font-bold tracking-tighter">MEU.<span class="gradient-text">PORTFÓLIO</span></div>
+        <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+            <a href="#home" class="hover:text-white transition">Início</a>
+            <a href="#history" class="hover:text-white transition">Minha História</a>
+            <a href="#projects" class="hover:text-white transition">Projetos</a>
+            <a href="#contact" class="hover:text-white transition">Contato</a>
+        </div>
+       <a href="curriculo/Currículo.pdf"> 
+        <button class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2 rounded-full text-sm font-semibold transition shadow-lg shadow-indigo-500/20">
+            Download CV
+        </button>
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex flex-col justify-center items-center px-6 pt-20">
+        <div class="text-center z-10 reveal">
+            <span class="text-indigo-400 font-mono mb-4 block uppercase tracking-widest text-sm">Olá, prazer meu nome é</span>
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-6 tracking-tight">Bruno Henryck <br> <span class="gradient-text">desenvolvedor front-end.</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg mb-10">
+                Focado em interfaces interativas, performance e estética minimalista. Apaixonado por tecnologia e narrativas visuais.
+            </p>
+            <div class="flex gap-4 justify-center">
+                <a href="#projects" class="bg-white text-black px-8 py-3 rounded-md font-bold hover:bg-gray-200 transition">Ver Projetos</a>
+                <a href="#history" class="border border-gray-700 px-8 py-3 rounded-md font-bold hover:bg-white/5 transition">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minha História -->
+    <section id="history" class="container py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal">
+                <div class="w-full aspect-square bg-zinc-900 rounded-2xl border border-zinc-800 flex items-center justify-center relative overflow-hidden group">
+                    <img src="img/foto.jpeg" alt="minha foto"><!-- Espaço para o seu personagem futuramente -->
+                    <div class="text-zinc-700 group-hover:scale-110 transition duration-700">
+                      
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+                    </div>
+                </div>
+            </div>
+            <div class="reveal">
+                <h2 class="text-3xl font-bold mb-6">Minha <span class="text-indigo-500">História</span></h2>
+                <div class="space-y-4 text-gray-400 leading-relaxed">
+                    <p>
+                        Sempre fui curioso sobre como as interfaces ganham vida na tela. Há poucos dias iniciei minha jornada no desenvolvimento front-end, movido pela vontade constante de aprender, testar e evoluir a cada linha de código. 
+                    </p>
+                    <p>
+                        Atualmente, estou focado em construir bases sólidas em HTML, CSS e JavaScript, explorando boas práticas, responsividade e atenção aos detalhes. Cada projeto é uma oportunidade de aprimorar minhas habilidades e transformar ideias simples em experiências visuais funcionais.
+                    </p>
+                    <p>
+                        Acredito que evolução contínua é a chave no mundo da tecnologia. Por isso, encaro cada desafio como parte do processo de crescimento, buscando sempre entregar interfaces mais limpas, organizadas e intuitivas do que no dia anterior.
+                    </p>
+                    <div class="pt-6 grid grid-cols-2 gap-4">
+                        <div class="p-4 glass-card rounded-xl">
+                            <h3 class="text-white font-bold text-2xl">3+</h3>
+                            <p class="text-xs uppercase">Meses de Estudo</p>
+                        </div>
+                        <div class="p-4 glass-card rounded-xl">
+                            <h3 class="text-white font-bold text-2xl">9+</h3>
+                            <p class="text-xs uppercase">Projetos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="py-24 px-6 bg-zinc-950/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+                <div class="reveal">
+                    <h2 class="text-3xl font-bold">Projetos em <span class="text-indigo-500">Destaque</span></h2>
+                    <p class="text-gray-400">Uma seleção do que ando construindo recentemente.</p>
+                </div>
+                <div class="reveal">
+                    <button class="text-sm border-b border-indigo-500 text-indigo-400 pb-1 hover:text-indigo-300 transition"><a href="https://github.com/BrunoHenryck">Ver todos no GitHub </a></button>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Projeto 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden reveal">
+                    <div class="projeto1 h-48 bg-zinc-800 flex items-center justify-center">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Clube de Pesca Rimberio – Página de Links</h3>
+                        <p class="text-gray-400 text-sm mb-4">Site com o objetivo de centralizar e facilitar o acesso às principais informações do negócio.</p>
+                        <div class="flex gap-2 mb-6">
+                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-300">HTML</span>
+                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-300">CSS</span>
+                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-300">JS</span>
+                        </div>
+                        <a href="https://brunohenryck.github.io/Rimberio-Fishing-Club/" class="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 text-sm font-semibold">
+                            Ver Projeto <i data-lucide="arrow-right" size="16"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Projeto 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden reveal" style="transition-delay: 100ms;">
+                    <div class="projeto2 h-48 bg-zinc-800 flex items-center justify-center">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Em andamento</h3>
+                        <p class="text-gray-400 text-sm mb-4">Painel administrativo para gestão de dados em tempo real.</p>
+                        <div class="flex gap-2 mb-6">
+                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-300">HTML</span>
+                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-300">CSS</span>
+                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-300">JS</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 text-sm font-semibold">
+                            Ver Projeto <i data-lucide="arrow-right" size="16"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Projeto 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden reveal" style="transition-delay: 200ms;">
+                    <div class="projeto3 h-48 bg-zinc-800 flex items-center justify-center">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Em breve</h3>
+                        <p class="text-gray-400 text-sm mb-4">Este projeto ainda está em produção</p>
+                        <div class="flex gap-2 mb-6">
+                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-300"></span>
+                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-300"></span>
+                        </div>
+                        <a href="#" class="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 text-sm font-semibold">
+                            Ver Projeto <i data-lucide="arrow-right" size="16"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contato -->
+    <footer id="contact" class="py-20 px-6 border-t border-zinc-900">
+        <div class="max-w-4xl mx-auto text-center reveal">
+            <h2 class="text-4xl font-bold mb-8">Vamos criar algo <span class="gradient-text">incrível?</span></h2>
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="https://github.com/BrunoHenryck" class="text-gray-400 hover:text-white transition"><i data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/bruno-henryck/" class="text-gray-400 hover:text-white transition"><i data-lucide="linkedin"></i></a>
+                <a href="mailto:brunohenryck444@gmail.com"
+                    ?subject=Contato%20via%20Portfólio
+                    &body=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20falar%20com%20você. class="text-gray-400 hover:text-white transition"><i data-lucide="mail"></i>
+                </a>
+            </div>
+            <p class="text-zinc-500 text-sm">© 2026 - Desenvolvido com 💜 em algum lugar do universo.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
