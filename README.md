@@ -7,7 +7,7 @@ O objetivo deste portfólio é centralizar minhas informações profissionais e 
 ---
 
 ## 🌐 Acesse o Portfólio
-🔗 https://brunohenryck.github.io
+🔗 https://brunohenryck.github.io/portifolio/
 
 ---
 
